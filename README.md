@@ -1,6 +1,6 @@
 # TodoFront
 
-###Ben Naji Imed
+## Ben Naji Imed :
 This is a small project with basic concepts in angular that allows me to learn more about the angular framework. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
