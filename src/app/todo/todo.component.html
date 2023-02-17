@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="mt-5 col-12 text-center">
+      <h2 mat-dialog-title>Create New Todo</h2>
+    </div>
+    <div class="col-12" mat-dialog-content>
+      <p class="d-flex flex-column flex-grow-1 py-4">
+        <mat-form-field>
+          <mat-label>Title</mat-label>
+          <input matInput name="title" [(ngModel)]="title" [value]="title">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Description</mat-label>
+          <textarea matInput name="description" [(ngModel)]="description" [value]="description"></textarea>
+        </mat-form-field>
+      </p>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <button mat-flat-button (click)="onCancel()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="create()">Create</button>
+    </div>
+  </div>
+</div>
