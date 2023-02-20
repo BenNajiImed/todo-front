@@ -57,7 +57,7 @@ export class ApiService {
       });
     }
 
-    register(username: string, password: string,Cpassword: string){
+    register(username: string, password: string, Cpassword: string){
       this.http.post(`${this.API_URL}/auth/register`, {username, password, Cpassword}).subscribe((res:any) =>{
         if(res.username){
           this.toast.success('register successful, you can login now','',{
